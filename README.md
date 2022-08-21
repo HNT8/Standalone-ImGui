@@ -1,5 +1,5 @@
 # Standalone ImGui Application Base v2
-A base for a standalone ImGui application. **The only file you have to modify is UI.cpp**
+A base for a standalone ImGui application. **The only file you have to modify is `UI.cpp`**
 
 ## Window Class Structure
 <ul>

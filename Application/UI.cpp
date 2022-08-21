@@ -15,9 +15,9 @@ void RunUI(Window* window) {
 	ImGui::Text("Window Top: %d", window->windowCoordinates.Top);
 	ImGui::Text("Window Bottom: %d", window->windowCoordinates.Bottom);
 	ImGui::Text("Window Center: (%d,%d)", window->windowCoordinates.Center.x, window->windowCoordinates.Center.y);
-
-	if (ImGui::Button("test"))
-		MessageBoxA(0, "test", "test", 0);
+	ImGui::Separator();
+	if (ImGui::Button("Message Box"))
+		MessageBoxA(0, "Test win32 message box.", Configuration::Initial::WindowTitle, 0);
 
 	ImGui::End();
 }

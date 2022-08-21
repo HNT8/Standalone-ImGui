@@ -1,5 +1,5 @@
 # Standalone ImGui Application Base v2
-A base for a standalone ImGui application. **The only file you have to modify is UI.cpp**
+A base for a standalone ImGui application. **The only file you have to modify is `UI.cpp`**
 
 ## Window Class Structure
 <ul>
@@ -53,7 +53,7 @@ void RunUI(Window* window) {
 }
 ```
 
-## Runs the specified code before creating the Window, DirectX Device, & ImGui
+## Running code before creating the Window, DirectX Device, & ImGui
 You can run anything you need to in the **`Starting()`** function located in `UI.cpp`
 ```cs
 void Starting() {
@@ -61,7 +61,7 @@ void Starting() {
 }
 ```
 
-## Runs the specified code after destroying the Window, DirectX Device, & ImGui
+## Running code after destroying the Window, DirectX Device, & ImGui
 You can run anything you need to in the **`Exiting()`** function located in `UI.cpp`
 ```cs
 void Exiting() {

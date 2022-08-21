@@ -53,7 +53,7 @@ void RunUI(Window* window) {
 }
 ```
 
-## Running code before creating the Window, DirectX Device, & ImGui
+## Runs the specified code before creating the Window, DirectX Device, & ImGui
 You can run anything you need to in the **`Starting()`** function located in `UI.cpp`
 ```cs
 void Starting() {
@@ -61,7 +61,7 @@ void Starting() {
 }
 ```
 
-## Running code after destroying the Window, DirectX Device, & ImGui
+## Runs the specified code after destroying the Window, DirectX Device, & ImGui
 You can run anything you need to in the **`Exiting()`** function located in `UI.cpp`
 ```cs
 void Exiting() {

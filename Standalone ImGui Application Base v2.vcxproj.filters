@@ -45,7 +45,7 @@
     <ClInclude Include="Application\Globals.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Application\UI.h">
+    <ClInclude Include="Application\Utilities\UI.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -75,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Application\Utilities\Window\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\UI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

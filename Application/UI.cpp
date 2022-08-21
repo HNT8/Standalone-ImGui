@@ -1,7 +1,5 @@
 #pragma once
-#include "Utilities/Window/Window.hpp"
-
-#include <string>
+#include "Utilities/UI.h"
 
 // ImGui Loop
 void RunUI(Window* window) {

@@ -160,7 +160,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Application\Globals.hpp" />
-    <ClInclude Include="Application\UI.h" />
+    <ClInclude Include="Application\Utilities\UI.h" />
     <ClInclude Include="Application\Utilities\ImGui\imconfig.h" />
     <ClInclude Include="Application\Utilities\ImGui\imgui.h" />
     <ClInclude Include="Application\Utilities\ImGui\imgui_impl_dx9.h" />
@@ -172,6 +172,7 @@
     <ClInclude Include="Application\Utilities\Window\Window.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Application\UI.cpp" />
     <ClCompile Include="Application\Utilities\ImGui\imgui.cpp" />
     <ClCompile Include="Application\Utilities\ImGui\imgui_demo.cpp" />
     <ClCompile Include="Application\Utilities\ImGui\imgui_draw.cpp" />

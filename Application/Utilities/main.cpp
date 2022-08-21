@@ -12,6 +12,7 @@ int __stdcall wWinMain(HINSTANCE instance, HINSTANCE previousInstance, PWSTR arg
 	window.MakeDevice();
 	window.MakeImGui();
 
+	window.PostInit();
 	while (window.exiting) {
 		window.BeginRender();
 		window.Render();
@@ -20,6 +21,7 @@ int __stdcall wWinMain(HINSTANCE instance, HINSTANCE previousInstance, PWSTR arg
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(10));
 	}
+	window.PreDeinit();
 
 	window.DestroyImGui();
 	window.DestroyDevice();

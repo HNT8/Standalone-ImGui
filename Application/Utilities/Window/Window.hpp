@@ -58,4 +58,7 @@ public:
 
 	void Start() noexcept;
 	void Exit() noexcept;
+
+	void PostInit() noexcept;
+	void PreDeinit() noexcept;
 };

@@ -1,5 +1,5 @@
 #include "Window.hpp"
-#include "../../UI.h"
+#include "../UI.h"
 
 #include <exception>
 
@@ -258,3 +258,5 @@ void Window::UpdateSizeStructs() noexcept
 // Runs starting & exiting functions.
 void Window::Start() noexcept { Starting(); }
 void Window::Exit() noexcept { Exiting(); }
+void Window::PostInit() noexcept { PostInitialization(this); }
+void Window::PreDeinit() noexcept { PreDeinitialization(this); }

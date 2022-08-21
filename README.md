@@ -1,5 +1,5 @@
 # Standalone ImGui Application Base v2
-A base for a standalone ImGui application. **The only file you have to modify is UI.h**
+A base for a standalone ImGui application. **The only file you have to modify is UI.cpp**
 
 ## Window Class Structure
 <ul>
@@ -30,7 +30,7 @@ A base for a standalone ImGui application. **The only file you have to modify is
 </ul>
 
 ## Modifying UI
-All ImGui features can be used in the **`RunUI()`** function located in `UI.h`
+All ImGui features can be used in the **`RunUI()`** function located in `UI.cpp`
 ```cs
 void RunUI(Window* window) {
 	ImGui::SetNextWindowPos({ 0, 0 });
@@ -53,18 +53,34 @@ void RunUI(Window* window) {
 }
 ```
 
-## Running code before creating the Window, DirectX Device, & ImGui
-You can run anything you need to in the **`Starting()`** function located in `UI.h`
+## Runs the specified code before creating the Window, DirectX Device, & ImGui
+You can run anything you need to in the **`Starting()`** function located in `UI.cpp`
 ```cs
 void Starting() {
    // Do something here before initializing anything.
 }
 ```
 
-## Running code after destroying the Window, DirectX Device, & ImGui
-You can run anything you need to in the **`Exiting()`** function located in `UI.h`
+## Runs the specified code after destroying the Window, DirectX Device, & ImGui
+You can run anything you need to in the **`Exiting()`** function located in `UI.cpp`
 ```cs
 void Exiting() {
+   // Do something here after right before exiting.
+}
+```
+
+## Runs the specified code before the while loop, after creating the Window, DirectX Device, & ImGui
+You can run anything you need to in the **`PostInitialization(Window* window)`** function located in `UI.cpp`
+```cs
+void PostInitialization(Window* window)() {
+   // Do something here before initializing anything.
+}
+```
+
+## Runs the specified code after the while loop, before destroying the Window, DirectX Device, & ImGui
+You can run anything you need to in the **`PreDeinitialization(Window* window)`** function located in `UI.cpp`
+```cs
+void PreDeinitialization(Window* window) {
    // Do something here after right before exiting.
 }
 ```

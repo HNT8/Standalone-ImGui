@@ -31,3 +31,13 @@ void Starting() {
 void Exiting() {
 
 }
+
+// Runs after initializing everything, right before the UI while loop.
+void PostInitialization(Window* window) {
+
+}
+
+// Runs right after the while loop breaks before deinitializing everything.
+void PreDeinitialization(Window* window) {
+
+}
